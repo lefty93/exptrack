@@ -2,6 +2,7 @@ import Income from "./components/Income";
 import Balance from "./components/Balance";
 import TotalExpenses from "./components/TotalExpenses";
 import ExpenseList from "./components/ExpenseList";
+import AddExpenseForm from "./components/AddExpenseForm";
 
 function App() {
   return (
@@ -24,7 +25,14 @@ function App() {
           <ExpenseList />
         </div>
       </div>
+      <h3 className='mt-3 flex justify-center'>Add Expenses</h3>
+      <div className='flex flex-row mt-3 justify-center mx-auto'>
+        <div className='columns-5xl'>
+          <AddExpenseForm />
+        </div>
+      </div>
     </div>
+
   );
 }
 
