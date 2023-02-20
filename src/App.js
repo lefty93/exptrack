@@ -7,14 +7,14 @@ function App() {
   return (
     <div className='container mx-auto'>
       <h1 className='mt-3 flex justify-center'>Expenses Tracker</h1>
-      <div className='flex flex-row mt-3 justify-between'>
-        <div className='columns-sm'>
+      <div className='flex flex-row mt-3 justify-around columns-3'>
+        <div className=''>
           <Income />
         </div>
-        <div className='columns-sm'>
+        <div className=''>
           <Balance />
         </div>
-        <div className='columns-sm'>
+        <div className=''>
           <TotalExpenses />
         </div>
       </div>
