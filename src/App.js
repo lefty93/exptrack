@@ -10,14 +10,14 @@ function App() {
     <AppProvider>
       <div className='container mx-auto'>
         <h1 className='mt-3 flex justify-center'>Expenses Tracker</h1>
-        <div className='flex flex-row mt-3 columns-3'>
-          <div className='w-full'>
+        <div className='flex flex-nowrap h-36'>
+          <div className='flex justify-center	w-1/3 h-full bg-gray-100'>
             <Income />
           </div>
-          <div className='w-full'>
+          <div className='flex justify-center w-1/3 h-full bg-gray-200'>
             <Balance />
           </div>
-          <div className='w-full'>
+          <div className='flex justify-center w-1/3 h-full bg-gray-300'>
             <TotalExpenses />
           </div>
         </div>

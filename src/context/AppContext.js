@@ -15,18 +15,20 @@ const AppReducer = (state, action) => {
                     (expense) => expense.id !== action.payload
                 ),
             };
+
+        case 'SET_INCOME':
+            return {
+                ...state,
+                income: action.payload
+            }
         default:
             return state;
     }
 };
 
 const initialState = {
-    income: 2000,
-    expenses: [
-        { id: 11, name: "lunch", cost: 24 },
-        { id: 12, name: "dinner", cost: 20 },
-        { id: 13, name: "movie", cost: 5 },
-    ],
+    income: 0,
+    expenses: [],
 }
 
 export const AppContext = createContext();
